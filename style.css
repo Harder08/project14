@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+    --background-color: hsl(241deg 32% 46%);
+    --button-color: hsl(40deg 76% 57%);
+    --font-color: hsl(218deg 17% 35%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 90px;
+    margin: 20px;
+    height: 700px;
+    width: 95%;
+    border-radius: 10px;
+}
+
+.header {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+.content {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.box {
+    background-color: white;
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 0px 20px 0px #0000007a;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.premium-pack {
+    height: 500px;
+    z-index: 1;
+}
+
+.essential-pack {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 500px;
+    height: 300px;
+}
+
+.fetures {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    height: 60%;
+    justify-content: space-between;
+}
+
+.fetures p {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.price-buy {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.title {
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+}
+
+.title::after {
+    content: "";
+    width: 268px;
+    border-bottom: 10px solid rgba(255, 181, 33, 0.514);
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    z-index: -1;
+}
+
+.essential-pack .title::after {
+    width: 276px;
+}
+
+sub, sup {
+    font-weight: lighter;
+    font-size: small;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color:  var(--button-color);
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.trick {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
